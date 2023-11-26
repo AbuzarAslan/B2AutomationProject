@@ -11,7 +11,7 @@ import java.sql.Driver;
 public class AllLocatorsPractice {
     public static void main(String[] args) {
 
-        // setup the driver
+        // Set up the driver
         WebDriverManager.chromedriver().setup();
 
         // create driver object
