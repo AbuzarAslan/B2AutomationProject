@@ -17,7 +17,7 @@ import org.openqa.selenium.WebElement;
  * Expected: “Wooden spoon | Etsy”
  */
 
-public class Title {
+public class Title_task4 {
     public static void main(String[] args) {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");

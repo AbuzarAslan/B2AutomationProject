@@ -1,4 +1,4 @@
-package com.loop.test.day5_testING_radioButton_dropDown;
+package com.loop.test.day5_testNG_radioButton_dropDown;
 
 import com.loop.test.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;

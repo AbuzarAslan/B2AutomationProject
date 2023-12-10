@@ -17,6 +17,7 @@ public class Locator {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
+        //1. go to https://loopcamp.vercel.app/forgot-password.html
         driver.get("https://loopcamp.vercel.app/forgot-password.html");
 
         WebElement forgotPassword = driver.findElement(By.cssSelector("div[class='example']>h2"));
