@@ -1,4 +1,4 @@
-package com.loop.test.day5_testING_radioButton_dropDown;
+package com.loop.test.day5_testNG_radioButton_dropDown;
 
 import com.loop.test.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class T0_radioButton {
     public static void main(String[] args) throws InterruptedException {
