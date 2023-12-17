@@ -1,4 +1,4 @@
-package com.loop.test.task.day3;
+package com.loop.task.day3;
 
 import com.loop.test.utilities.DocuportConstants;
 import com.loop.test.utilities.WebDriverFactory;
@@ -15,24 +15,27 @@ import org.openqa.selenium.WebElement;
  * 4. Validate username and password error messages.
  */
 
-public class Navigate {
-    public static void main(String[] args) {
+public class task_2 {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
-        driver.get("https://beta.docuport.app/login?redirect=%2F");
+        driver.get("https://beta.docuport.app/login");
 
         WebElement placeholder = driver.findElement(By.cssSelector("label[for='input-14']"));
         String actualPlaceholder = placeholder.getText();
         System.out.println(actualPlaceholder);
 
+
+
+        Thread.sleep(3000);
         if (actualPlaceholder.equals(DocuportConstants.USERNAME_PLACEHOLDER)) {
             System.out.println("true");
         } else {
             System.out.println("false");
         }
 
-        WebElement placeholderPassword = driver.findElement(By.cssSelector("label[for='input-15']"));
+        WebElement placeholderPassword = driver.findElement(By.cssSelector("label[for='input-14']"));
         String actualPlaceholderPassword = placeholderPassword.getText();
         System.out.println(actualPlaceholderPassword);
 

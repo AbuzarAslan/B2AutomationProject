@@ -7,7 +7,7 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class T000_xpath_getText {
+public class  T000_xpath_getText {
     /*
    1. Open Chrome browser
    2. Go to Docu port
@@ -87,6 +87,7 @@ public class T000_xpath_getText {
         Thread.sleep(10000); // bunu deyisib yoxlaya bilersen...
 
         // 10. validate - We've sent you an email with a link to reset your password. Please check your email
+        // stale element exception dirsa onda cox gozleyib demek
 
         //System.out.println(successMessage.getText());
 

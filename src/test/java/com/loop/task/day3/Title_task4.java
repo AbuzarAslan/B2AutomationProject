@@ -1,4 +1,4 @@
-package com.loop.test.task.day3;
+package com.loop.task.day3;
 
 
 import com.loop.test.utilities.WebDriverFactory;
