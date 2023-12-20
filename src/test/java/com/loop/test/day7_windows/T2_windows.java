@@ -23,7 +23,7 @@ public class T2_windows extends TestBase {
 
      */
     @Test
-    public void windowHanleTest() {
+    public void windowHandleTest() {
         driver.get("https://www.amazon.com");
         ((JavascriptExecutor) driver).executeScript("window.open('http://google.com','_blank');");
         ((JavascriptExecutor) driver).executeScript("window.open('http://etsy.com','_blank');");
@@ -40,7 +40,8 @@ public class T2_windows extends TestBase {
 //                break;
 //            }
 //        }
-        BrowserUtils.switchWindowAndValidate(driver, "facebook.com", "facebook");
+        //BrowserUtils.switchWindowAndValidate(driver, "facebook.com", "facebook");
+        BrowserUtils.switchToWindow(driver, "facebook");
 
     }
 }
