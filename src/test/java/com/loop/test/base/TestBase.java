@@ -7,6 +7,8 @@ import org.testng.annotations.*;
 public class TestBase {
 
     public WebDriver driver;
+    public String actual;
+    public String expected;
 
     @BeforeMethod
     public void setUpMethod(){
